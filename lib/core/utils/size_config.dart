@@ -11,7 +11,7 @@ class SizeConfig {
   static const double desktop = 1200;
   static const double tablet = 800;
 
-  void init(BuildContext context) {
+  static init(BuildContext context) {
     _mediaQueryData = MediaQuery.sizeOf(context);
     screenWidth = _mediaQueryData.width;
     screenHeight = _mediaQueryData.height;

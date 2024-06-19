@@ -2,6 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:slash/core/utils/app_colors.dart';
 import 'package:slash/features/home/presentation/views/home_view.dart';
 
 import 'core/bloc_observer.dart';
@@ -37,11 +38,12 @@ class Slash extends StatelessWidget {
 
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.backGround,
         appBarTheme: const AppBarTheme(
           toolbarHeight: 0,
           systemOverlayStyle: SystemUiOverlayStyle(
-            statusBarColor: Colors.transparent,
-            statusBarIconBrightness: Brightness.light,
+            statusBarColor: AppColors.backGround,
+            statusBarIconBrightness: Brightness.dark,
           ),
         ),
       ),
