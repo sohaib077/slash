@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:slash/core/utils/assets_data.dart';
-import 'package:slash/core/utils/size_config.dart';
+import 'package:slash/core/utils/extensions.dart';
 import 'package:slash/core/utils/styles.dart';
 import 'package:slash/features/home/presentation/views/widgets/notification_button.dart';
 
@@ -21,7 +21,7 @@ class HomeAppBar extends StatelessWidget {
         const Spacer(),
         SvgPicture.asset(
           AssetsData.locationIcon,
-          width: SizeConfig.widthBlock * 2,
+          width:20.res(context),
         ),
         const SizedBox(width: 8),
         Column(
@@ -40,7 +40,7 @@ class HomeAppBar extends StatelessWidget {
         const SizedBox(width: 8),
         SvgPicture.asset(
           AssetsData.arrowIcon,
-          width: SizeConfig.widthBlock * 2,
+          width:20.res(context),
         ),
         const Spacer(),
         const NotificationButton(),

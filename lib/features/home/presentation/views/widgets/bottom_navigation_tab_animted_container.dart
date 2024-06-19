@@ -1,5 +1,8 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:slash/core/utils/app_colors.dart';
+import 'package:slash/core/utils/extensions.dart';
 import 'package:slash/core/utils/size_config.dart';
 
 class BottomNavigationTabAnimatedContainer extends StatelessWidget {
@@ -9,6 +12,7 @@ class BottomNavigationTabAnimatedContainer extends StatelessWidget {
   final int currentTabIndex;
   @override
   Widget build(BuildContext context) {
+    SizeConfig.init(context);
     return AnimatedPositioned(
       duration: const Duration(milliseconds: 500),
       top: 0,
@@ -16,7 +20,7 @@ class BottomNavigationTabAnimatedContainer extends StatelessWidget {
       curve: Curves.easeInOut,
       child: Container(
         width: SizeConfig.screenWidth / 4,
-        height: SizeConfig.heightBlock * .8,
+        height: 8,
         decoration: const BoxDecoration(
           color: AppColors.black,
           borderRadius: BorderRadius.only(

@@ -21,7 +21,7 @@ class HomeView extends StatelessWidget {
         appBar: AppBar(),
         body: AdaptiveLayout(
           mobileLayout: (context) => const MobileLayout(),
-          tabletLayout: (context) => const Column(),
+          tabletLayout: (context) => const MobileLayout(),
           desktopLayout: (context) => const Column(),
         ),
       ),

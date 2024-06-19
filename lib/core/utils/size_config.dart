@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SizeConfig {
+abstract class SizeConfig {
   static late Size _mediaQueryData;
   static late double screenWidth;
   static late double screenHeight;
@@ -18,5 +18,26 @@ class SizeConfig {
     // On my emulator the defaultSize = 10 almost
     widthBlock = screenWidth * 0.0275;
     heightBlock = screenHeight * 0.0156;
+  }
+
+  static double getResponsiveFontSize(context, {required double fontSize}) {
+    double scaleFactor = getScaleFactor(context);
+    double responsiveFontSize = fontSize * scaleFactor;
+
+    double lowerLimit = fontSize * .8;
+    double upperLimit = fontSize * 1.5;
+
+    return responsiveFontSize.clamp(lowerLimit, upperLimit);
+  }
+
+  static double getScaleFactor(context) {
+    double width = MediaQuery.sizeOf(context).width;
+    if (width < SizeConfig.tablet) {
+      return width / 500;
+    } else if (width < SizeConfig.desktop) {
+      return width / 500;
+    } else {
+      return width / 1000;
+    }
   }
 }

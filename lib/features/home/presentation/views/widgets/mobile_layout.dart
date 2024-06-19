@@ -1,4 +1,7 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:slash/core/utils/size_config.dart';
 import 'package:slash/features/home/presentation/views/widgets/home_app_bar.dart';
 
 class MobileLayout extends StatelessWidget {

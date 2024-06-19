@@ -5,7 +5,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:slash/core/utils/app_colors.dart';
 import 'package:slash/core/utils/assets_data.dart';
-import 'package:slash/core/utils/size_config.dart';
+import 'package:slash/core/utils/extensions.dart';
 
 class NotificationButton extends StatelessWidget {
   const NotificationButton({
@@ -19,15 +19,15 @@ class NotificationButton extends StatelessWidget {
       children: [
         SvgPicture.asset(
           AssetsData.notificationIcon,
-          width: SizeConfig.widthBlock * 3,
+          width: 30.res(context),
         ),
         Padding(
           padding: const EdgeInsetsDirectional.only(end: 1.5, top: 1.5),
           child: CircleAvatar(
-            radius: SizeConfig.widthBlock * .6,
+            radius: 6.res(context),
             backgroundColor: AppColors.backGround,
             child: CircleAvatar(
-              radius: SizeConfig.widthBlock * .4,
+              radius: 4.res(context),
               backgroundColor: AppColors.red,
             ),
           ),
