@@ -15,4 +15,14 @@ class HomeCubit extends Cubit<HomeState> {
     currentTab = value;
     emit(ChangeTaBValueState());
   }
+
+
+  double currentSliderIndex = 0;
+
+  void changeIndex(double index) {
+    currentSliderIndex = index;
+    emit(ChangeCurrentSliderIndexState());
+  }
+
+
 }

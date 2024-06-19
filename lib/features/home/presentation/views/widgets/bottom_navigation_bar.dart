@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:slash/core/utils/app_colors.dart';
@@ -14,6 +16,9 @@ class CustomBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<HomeCubit, HomeState>(
+      buildWhen: (previous, current) {
+        return current is ChangeTaBValueState;
+      },
       builder: (context, state) {
         return IntrinsicHeight(
           child: Stack(

@@ -4,6 +4,11 @@ abstract class AssetsData {
   static const urbanistFontFamily = "Urbanist";
 
 
+  /// Lotties
+  static const notFoundLottie = "assets/lotties/notFoundLottie.json";
+
+
+
   /// Images
 
 

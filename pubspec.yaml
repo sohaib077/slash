@@ -60,8 +60,10 @@ dependencies:
   carousel_slider: ^4.2.1
 
   # Dots indicator to show progression of a PageView
-  dots_indicator: ^3.0.0
+  dots_indicator: ^2.1.0
 
+  # Render lotties natively
+  lottie: ^3.1.2
 
 
 
@@ -94,6 +96,7 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+    - assets/lotties/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
+import 'package:slash/features/home/presentation/manager/home_cubit.dart';
 
 class MyBlocObserver extends BlocObserver {
   @override
@@ -12,7 +13,8 @@ class MyBlocObserver extends BlocObserver {
   @override
   void onChange(BlocBase bloc, Change change) {
     super.onChange(bloc, change);
-    log('onChange -- ${bloc.runtimeType}, $change');
+    if (change.nextState is! ChangeCurrentSliderIndexState)
+      log('onChange -- ${bloc.runtimeType}, $change');
   }
 
   @override
