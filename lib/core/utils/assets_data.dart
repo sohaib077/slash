@@ -17,4 +17,8 @@ abstract class AssetsData {
   static const arrowIcon = "assets/icons/arrowIcon.svg";
   static const notificationIcon = "assets/icons/notificationIcon.svg";
 
+  static const filterIcon = "assets/icons/filterIcon.svg";
+  static const searchIcon = "assets/icons/searchIcon.svg";
+
+
 }

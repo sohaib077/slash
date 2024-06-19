@@ -20,6 +20,11 @@ abstract class SizeConfig {
     heightBlock = screenHeight * 0.0156;
   }
 
+  static bool isDesktop(context) {
+    // double width = MediaQuery.sizeOf(context).width;
+    return screenWidth >= desktop;
+  }
+
   static double getResponsiveFontSize(context, {required double fontSize}) {
     double scaleFactor = getScaleFactor(context);
     double responsiveFontSize = fontSize * scaleFactor;

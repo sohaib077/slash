@@ -1,8 +1,6 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
-import 'package:slash/core/utils/size_config.dart';
 import 'package:slash/features/home/presentation/views/widgets/home_app_bar.dart';
+import 'package:slash/features/home/presentation/views/widgets/home_search_bar.dart';
 
 class MobileLayout extends StatelessWidget {
   const MobileLayout({
@@ -15,7 +13,9 @@ class MobileLayout extends StatelessWidget {
       padding: const EdgeInsets.only(top: 20, right: 24, left: 24),
       child: Column(
         children: [
-          HomeAppBar(),
+          const HomeAppBar(),
+          const SizedBox(height: 20),
+          HomeSearchBar()
         ],
       ),
     );

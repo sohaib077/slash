@@ -8,4 +8,5 @@ abstract class AppColors {
   static const Color gray700 = Color(0xff454545);
   static const Color gray600 = Color(0xff5F5F5F);
   static const Color red = Color(0xffC12222);
+  static const Color textFormFieldFilledColor = Color(0xffE4E4E4);
 }
