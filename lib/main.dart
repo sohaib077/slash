@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:slash/core/utils/app_colors.dart';
 import 'package:slash/features/home/presentation/views/home_view.dart';
+import 'package:slash/features/splash/presentation/views/splash_view.dart';
 
 import 'core/bloc_observer.dart';
 import 'generated/l10n.dart';
@@ -47,7 +48,7 @@ class Slash extends StatelessWidget {
           ),
         ),
       ),
-      home: const HomeView(),
+      home: const SplashView(),
       // home: const GameBoardView(),
     );
   }

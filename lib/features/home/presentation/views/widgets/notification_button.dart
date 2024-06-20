@@ -33,6 +33,6 @@ class NotificationButton extends StatelessWidget {
           ),
         ).animate().scale(delay: 500.ms, duration: 500.ms),
       ],
-    ).animate().shake(delay: 1100.ms, duration: 1000.ms , rotation: pi/18 , hz: 5);
+    ).animate().shake(delay: 1500.ms, duration: 1000.ms , rotation: pi/18 , hz: 5);
   }
 }
