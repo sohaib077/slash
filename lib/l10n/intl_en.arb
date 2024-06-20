@@ -1,1 +1,15 @@
-{}
+{
+  "slash": "Slash.",
+  "nasr": "Nasr City",
+  "cairo": "Cairo",
+  "search": "Search here..",
+  "home": "Home",
+  "favorites": "Favorites",
+  "my_cart": "My Cart",
+  "profile": "Profile",
+  "categories": "Categories",
+  "see_all": "See all",
+  "best_selling": "Best Selling",
+  "new_arrival": "New Arrival",
+  "recommended": "Recommended for you"
+}

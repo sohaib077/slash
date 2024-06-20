@@ -49,6 +49,136 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `Slash.`
+  String get slash {
+    return Intl.message(
+      'Slash.',
+      name: 'slash',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Nasr City`
+  String get nasr {
+    return Intl.message(
+      'Nasr City',
+      name: 'nasr',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cairo`
+  String get cairo {
+    return Intl.message(
+      'Cairo',
+      name: 'cairo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search here..`
+  String get search {
+    return Intl.message(
+      'Search here..',
+      name: 'search',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Favorites`
+  String get favorites {
+    return Intl.message(
+      'Favorites',
+      name: 'favorites',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Cart`
+  String get my_cart {
+    return Intl.message(
+      'My Cart',
+      name: 'my_cart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Categories`
+  String get categories {
+    return Intl.message(
+      'Categories',
+      name: 'categories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `See all`
+  String get see_all {
+    return Intl.message(
+      'See all',
+      name: 'see_all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Best Selling`
+  String get best_selling {
+    return Intl.message(
+      'Best Selling',
+      name: 'best_selling',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New Arrival`
+  String get new_arrival {
+    return Intl.message(
+      'New Arrival',
+      name: 'new_arrival',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Recommended for you`
+  String get recommended {
+    return Intl.message(
+      'Recommended for you',
+      name: 'recommended',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

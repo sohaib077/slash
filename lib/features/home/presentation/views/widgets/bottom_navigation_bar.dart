@@ -7,6 +7,7 @@ import 'package:slash/core/utils/assets_data.dart';
 import 'package:slash/features/home/presentation/manager/home_cubit.dart';
 import 'package:slash/features/home/presentation/views/widgets/bottom_navigation_tab_animted_container.dart';
 import 'package:slash/features/home/presentation/views/widgets/buttom_navigation_bar_tap_item.dart';
+import 'package:slash/generated/l10n.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
   const CustomBottomNavigationBar({
@@ -42,22 +43,22 @@ class CustomBottomNavigationBar extends StatelessWidget {
                   children: [
                     BottomNavigationBarTabItem(
                       tapIcon: AssetsData.homeIcon,
-                      tapName: "Home",
+                      tapName: S.of(context).home,
                       index: 0,
                     ),
                     BottomNavigationBarTabItem(
                       tapIcon: AssetsData.heartIcon,
-                      tapName: "Favorites",
+                      tapName: S.of(context).favorites,
                       index: 1,
                     ),
                     BottomNavigationBarTabItem(
                       tapIcon: AssetsData.cartIcon,
-                      tapName: "My Cart",
+                      tapName: S.of(context).my_cart,
                       index: 2,
                     ),
                     BottomNavigationBarTabItem(
                       tapIcon: AssetsData.profileIcon,
-                      tapName: "Profile",
+                      tapName: S.of(context).profile,
                       index: 3,
                     ),
                   ],

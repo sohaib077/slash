@@ -1,17 +1,11 @@
 abstract class AssetsData {
-
   ///fonts
   static const urbanistFontFamily = "Urbanist";
-
 
   /// Lotties
   static const notFoundLottie = "assets/lotties/notFoundLottie.json";
 
-
-
   /// Images
-
-
 
   /// Icons
   static const cartIcon = "assets/icons/cartIcon.svg";
@@ -25,5 +19,10 @@ abstract class AssetsData {
   static const filterIcon = "assets/icons/filterIcon.svg";
   static const searchIcon = "assets/icons/searchIcon.svg";
 
-
+  static const fashionIcon = "assets/icons/fashionIcon.svg";
+  static const gamesIcon = "assets/icons/gamesIcon.svg";
+  static const accessoriesIcon = "assets/icons/accessoriesIcon.svg";
+  static const booksIcon = "assets/icons/booksIcon.svg";
+  static const artifactsIcon = "assets/icons/artifactsIcon.svg";
+  static const petsIcon = "assets/icons/petsIcon.svg";
 }

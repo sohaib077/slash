@@ -5,6 +5,7 @@ import 'package:slash/core/utils/constants.dart';
 import 'package:slash/core/utils/extensions.dart';
 import 'package:slash/core/utils/styles.dart';
 import 'package:slash/features/home/presentation/views/widgets/notification_button.dart';
+import 'package:slash/generated/l10n.dart';
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({
@@ -14,28 +15,29 @@ class HomeAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: Constants.horizontalPadding),
+      padding:
+          const EdgeInsets.symmetric(horizontal: Constants.horizontalPadding),
       child: Row(
         children: [
           Text(
-            "Slash.",
+            S.of(context).slash,
             style: Styles.bold16Style(context, size: 20),
           ),
           const Spacer(),
           SvgPicture.asset(
             AssetsData.locationIcon,
-            width:20.res(context),
+            width: 20.res(context),
           ),
           const SizedBox(width: 8),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Nasr City",
+                S.of(context).nasr,
                 style: Styles.regular14Style(context),
               ),
               Text(
-                "Cairo",
+                S.of(context).cairo,
                 style: Styles.bold16Style(context, size: 14),
               ),
             ],
@@ -43,7 +45,7 @@ class HomeAppBar extends StatelessWidget {
           const SizedBox(width: 8),
           SvgPicture.asset(
             AssetsData.arrowIcon,
-            width:20.res(context),
+            width: 20.res(context),
           ),
           const Spacer(),
           const NotificationButton(),

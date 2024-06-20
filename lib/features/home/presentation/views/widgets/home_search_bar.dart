@@ -6,6 +6,7 @@ import 'package:slash/core/utils/assets_data.dart';
 import 'package:slash/core/utils/constants.dart';
 import 'package:slash/core/utils/extensions.dart';
 import 'package:slash/features/home/presentation/views/widgets/CustomTextFormField.dart';
+import 'package:slash/generated/l10n.dart';
 
 class HomeSearchBar extends StatelessWidget {
   const HomeSearchBar({
@@ -23,7 +24,7 @@ class HomeSearchBar extends StatelessWidget {
             Expanded(
               child: CustomTextFormField(
                 controller: TextEditingController(),
-                hintText: "Search here..",
+                hintText: S.of(context).search,
                 prefix: AssetsData.searchIcon,
               ),
             ),
