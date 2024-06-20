@@ -26,7 +26,7 @@ class CategoriesSection extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CategoryHeader(title: S.of(context).categories),
+        CategoryHeader(title: S.of(context).categories , topPadding: 10,),
         SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
           scrollDirection: Axis.horizontal,

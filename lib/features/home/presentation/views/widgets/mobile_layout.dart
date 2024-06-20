@@ -4,6 +4,8 @@ import 'package:slash/features/home/presentation/views/widgets/categories_sectio
 import 'package:slash/features/home/presentation/views/widgets/custom_carousel_slider.dart';
 import 'package:slash/features/home/presentation/views/widgets/home_app_bar.dart';
 import 'package:slash/features/home/presentation/views/widgets/home_search_bar.dart';
+import 'package:slash/features/home/presentation/views/widgets/new_arrival_section.dart';
+import 'package:slash/features/home/presentation/views/widgets/recommended_section.dart';
 
 class MobileLayout extends StatelessWidget {
   const MobileLayout({
@@ -24,7 +26,9 @@ class MobileLayout extends StatelessWidget {
           CustomCarouselSlider(),
           CategoriesSection(),
           BestSellingSection(),
-          SizedBox(height: 50),
+          NewArrivalSection(),
+          RecommendedSection(),
+          SizedBox(height: 30),
         ],
       ),
     );

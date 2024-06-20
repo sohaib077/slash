@@ -14,17 +14,19 @@ class CategoryHeader extends StatelessWidget {
   const CategoryHeader({
     super.key,
     required this.title,
+    this.topPadding,
   });
 
   final String title;
+  final double? topPadding;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsetsDirectional.only(
+      padding:  EdgeInsetsDirectional.only(
           start: Constants.horizontalPadding,
           end: Constants.horizontalPadding,
-          top: 20,
+          top: topPadding ?? 25,
           bottom: 10),
       child: Row(
         children: [
@@ -44,9 +46,7 @@ class CategoryHeader extends StatelessWidget {
                 borderRadius: BorderRadius.circular(4)),
             padding: const EdgeInsets.all(2),
             child: Transform.rotate(
-              angle: isArabic(context)
-                  ? pi / 2
-                  : -pi / 2,
+              angle: isArabic(context) ? pi / 2 : -pi / 2,
               child: SvgPicture.asset(
                 AssetsData.arrowIcon,
                 width: 15.res(context),

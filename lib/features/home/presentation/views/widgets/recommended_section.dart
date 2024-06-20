@@ -6,8 +6,8 @@ import 'package:slash/features/home/presentation/views/widgets/category_header.d
 import 'package:slash/features/home/presentation/views/widgets/custom_list_view.dart';
 import 'package:slash/generated/l10n.dart';
 
-class BestSellingSection extends StatelessWidget {
-  const BestSellingSection({
+class RecommendedSection extends StatelessWidget {
+  const RecommendedSection({
     super.key,
   });
 
@@ -17,9 +17,9 @@ class BestSellingSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CategoryHeader(
-          title: S.of(context).best_selling,
+          title: S.of(context).recommended,
         ),
-        const CustomListView(list: DummyData.bestSellers),
+        const CustomListView(list: DummyData.recommended),
       ],
     );
   }

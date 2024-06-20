@@ -23,7 +23,7 @@ class BottomNavigationTabAnimatedContainer extends StatelessWidget {
       curve: Curves.easeInOut,
       child: Container(
         width: SizeConfig.screenWidth / 4,
-        height: 8,
+        height: 7,
         decoration: const BoxDecoration(
           color: AppColors.black,
           borderRadius: BorderRadius.only(

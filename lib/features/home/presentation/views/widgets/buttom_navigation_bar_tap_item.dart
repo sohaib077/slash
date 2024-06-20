@@ -30,17 +30,17 @@ class BottomNavigationBarTabItem extends StatelessWidget {
         HomeCubit.get(context).changeTab(index);
       },
       child: Padding(
-        padding: const EdgeInsets.only(bottom: 8, top: 18),
+        padding: const EdgeInsets.only(bottom: 6, top: 16),
         child: Column(
           children: [
             SvgPicture.asset(
               tapIcon,
-              width: 30.res(context),
+              width: 27.res(context),
               colorFilter: selected
                   ? const ColorFilter.mode(AppColors.black, BlendMode.srcIn)
                   : null,
             ),
-            const SizedBox(height: 3),
+            const SizedBox(height: 2),
             Text(
               tapName,
               style: selected

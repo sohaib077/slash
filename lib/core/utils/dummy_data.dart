@@ -67,7 +67,7 @@ abstract class DummyData {
     ),
   ];
 
-  static const List<DataModel> recommendedForYou = [
+  static const List<DataModel> recommended = [
     DataModel(
       id: 1,
       name: "Leather Jacket",
