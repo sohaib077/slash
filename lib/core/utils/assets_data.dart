@@ -10,6 +10,7 @@ abstract class AssetsData {
   /// Icons
   static const cartIcon = "assets/icons/cartIcon.svg";
   static const heartIcon = "assets/icons/heartIcon.svg";
+  static const favoriteIcon = "assets/icons/favoriteIcon.svg";
   static const homeIcon = "assets/icons/homeIcon.svg";
   static const profileIcon = "assets/icons/profileIcon.svg";
   static const locationIcon = "assets/icons/locationIcon.svg";
@@ -25,4 +26,7 @@ abstract class AssetsData {
   static const booksIcon = "assets/icons/booksIcon.svg";
   static const artifactsIcon = "assets/icons/artifactsIcon.svg";
   static const petsIcon = "assets/icons/petsIcon.svg";
+  static const addIcon = "assets/icons/addIcon.svg";
+  static const addedIcon = "assets/icons/addedIcon.svg";
+
 }

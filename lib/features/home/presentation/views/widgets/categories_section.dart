@@ -1,6 +1,3 @@
-import 'dart:ffi';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:slash/core/utils/app_colors.dart';
@@ -52,16 +49,16 @@ class CategoriesSection extends StatelessWidget {
         children: [
           CircleAvatar(
             backgroundColor: AppColors.black,
-            radius: 28.res(context),
+            radius: 27.res(context),
             child: SvgPicture.asset(
               category.values.first,
-              width: 30.res(context),
+              width: 28.res(context),
             ),
           ),
           const SizedBox(height: 5),
           Text(
             category.keys.first,
-            style: Styles.regular14Style(context),
+            style: Styles.regular14Style(context , size: 13),
           ),
         ],
       ),

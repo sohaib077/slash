@@ -12,16 +12,21 @@ class MobileLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        SizedBox(height: 15),
-        HomeAppBar(),
-        SizedBox(height: 20),
-        HomeSearchBar(),
-        SizedBox(height: 20),
-        CustomCarouselSlider(),
-        CategoriesSection(),
-      ],
+    return const SingleChildScrollView(
+      physics: BouncingScrollPhysics(),
+      child: Column(
+        children: [
+          SizedBox(height: 15),
+          HomeAppBar(),
+          SizedBox(height: 20),
+          HomeSearchBar(),
+          SizedBox(height: 20),
+          CustomCarouselSlider(),
+          CategoriesSection(),
+          BestSellingSection(),
+          SizedBox(height: 50),
+        ],
+      ),
     );
   }
 }
