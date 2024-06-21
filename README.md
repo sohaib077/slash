@@ -1,16 +1,16 @@
 # slash
+- Flutter version --> 3.19.5
 
-A new Flutter project.
+✅ Mobile layout
 
-## Getting Started
+https://github.com/sohaib077/slash/assets/89821455/24753c87-264f-4d66-8c8f-1bfcc85b967d
 
-This project is a starting point for a Flutter application.
+![mobile-ar](https://github.com/sohaib077/slash/assets/89821455/9e61fee6-d85c-434b-83b5-303dff376b31)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+✅ Desktop layout
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+https://github.com/sohaib077/slash/assets/89821455/abb846ca-0761-4d1b-ab92-d4fe6beea5ee
+
+![web-ar](https://github.com/sohaib077/slash/assets/89821455/7ca407ea-54a7-4c66-90b5-009bda388388)
