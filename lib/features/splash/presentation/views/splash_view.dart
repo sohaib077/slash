@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:slash/features/splash/presentation/views/widgets/custom_animated_text.dart';
 import 'package:slash/features/splash/presentation/views/widgets/dot.dart';
 
@@ -10,8 +9,9 @@ class SplashView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Center(
+      body: const Center(
         child: Row(
+          textDirection: TextDirection.ltr,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomAnimatedText(text: "S", index: 0),
@@ -20,7 +20,6 @@ class SplashView extends StatelessWidget {
             CustomAnimatedText(text: "S", index: 3),
             CustomAnimatedText(text: "H", index: 4),
             Dot()
-
           ],
         ),
       ),

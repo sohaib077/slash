@@ -5,10 +5,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:slash/core/utils/extensions.dart';
 import 'package:slash/core/utils/size_config.dart';
 import 'package:slash/features/home/data/models/data_model.dart';
-import 'package:slash/features/home/presentation/views/widgets/category_header.dart';
 import 'package:slash/features/home/presentation/views/widgets/grid_item.dart';
-import 'package:slash/features/home/presentation/views/widgets/list_item.dart';
-import 'package:slash/generated/l10n.dart';
 
 class CustomGridView extends StatelessWidget {
   const CustomGridView({

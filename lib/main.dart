@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:slash/core/utils/app_colors.dart';
-import 'package:slash/features/home/presentation/views/home_view.dart';
 import 'package:slash/features/splash/presentation/views/splash_view.dart';
 
 import 'core/bloc_observer.dart';
@@ -35,7 +34,7 @@ class Slash extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      locale: const Locale('ar'),
+      locale: const Locale('en'),
 
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -48,7 +47,7 @@ class Slash extends StatelessWidget {
           ),
         ),
       ),
-      home: const HomeView(),
+      home: const SplashView(),
     );
   }
 }

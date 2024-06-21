@@ -1,13 +1,10 @@
-import 'dart:developer';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:slash/core/utils/app_colors.dart';
-import 'package:slash/core/utils/assets_data.dart';
 import 'package:slash/core/utils/extensions.dart';
-import 'package:slash/core/utils/size_config.dart';
 import 'package:slash/core/utils/styles.dart';
 import 'package:slash/features/home/presentation/manager/home_cubit.dart';
 

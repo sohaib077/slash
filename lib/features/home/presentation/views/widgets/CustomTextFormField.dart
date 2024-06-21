@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:slash/core/utils/app_colors.dart';
-import 'package:slash/core/utils/assets_data.dart';
 import 'package:slash/core/utils/extensions.dart';
-import 'package:slash/core/utils/size_config.dart';
-import 'package:slash/core/utils/size_config.dart';
 import 'package:slash/core/utils/styles.dart';
 
 class CustomTextFormField extends StatelessWidget {

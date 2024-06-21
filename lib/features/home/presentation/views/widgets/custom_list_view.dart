@@ -4,9 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:slash/core/utils/extensions.dart';
 import 'package:slash/core/utils/size_config.dart';
 import 'package:slash/features/home/data/models/data_model.dart';
-import 'package:slash/features/home/presentation/views/widgets/category_header.dart';
 import 'package:slash/features/home/presentation/views/widgets/list_item.dart';
-import 'package:slash/generated/l10n.dart';
 
 class CustomListView extends StatelessWidget {
   const CustomListView({
