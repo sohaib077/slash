@@ -8,7 +8,7 @@ abstract class SizeConfig {
   static late double heightBlock;
 
   /// Break points
-  static const double desktop = 1200;
+  static const double desktop = 1000;
   static const double tablet = 800;
 
   static init(BuildContext context) {
@@ -42,7 +42,7 @@ abstract class SizeConfig {
     } else if (width < SizeConfig.desktop) {
       return width / 500;
     } else {
-      return width / 1000;
+      return width / 900;
     }
   }
 }

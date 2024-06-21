@@ -48,8 +48,7 @@ class Slash extends StatelessWidget {
           ),
         ),
       ),
-      home: const SplashView(),
-      // home: const GameBoardView(),
+      home: const HomeView(),
     );
   }
 }
