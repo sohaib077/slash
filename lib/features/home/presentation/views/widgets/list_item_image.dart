@@ -6,26 +6,30 @@ import 'package:slash/features/home/presentation/views/widgets/list_item_fav_but
 
 class ListItemImage extends StatelessWidget {
   const ListItemImage({
-    super.key, required this.image,
+    super.key,
+    required this.image,
+    this.screenHeightRation,
   });
+
   final String image;
+  final double? screenHeightRation;
+
   @override
   Widget build(BuildContext context) {
     return Stack(
       alignment: AlignmentDirectional.topEnd,
       children: [
         SizedBox(
-          height: (SizeConfig.screenHeight * .15),
+          height: SizeConfig.screenHeight * (screenHeightRation ?? .15),
           width: double.infinity,
           child: AspectRatio(
             aspectRatio: 124 / 116,
             child: ClipRRect(
                 borderRadius: BorderRadius.circular(Constants.borderRadius),
-                child: Image.asset(image,
-                    fit: BoxFit.cover)),
+                child: Image.asset(image, fit: BoxFit.cover)),
           ),
         ),
-         const ListItemFavButton(),
+        const ListItemFavButton(),
       ],
     );
   }

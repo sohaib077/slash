@@ -1,15 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:slash/core/utils/extensions.dart';
 import 'package:slash/core/utils/size_config.dart';
 import 'package:slash/features/home/data/models/data_model.dart';
 import 'package:slash/features/home/presentation/views/widgets/category_header.dart';
+import 'package:slash/features/home/presentation/views/widgets/grid_item.dart';
 import 'package:slash/features/home/presentation/views/widgets/list_item.dart';
 import 'package:slash/generated/l10n.dart';
 
-class CustomListView extends StatelessWidget {
-  const CustomListView({
+class CustomGridView extends StatelessWidget {
+  const CustomGridView({
     super.key,
     required this.list,
   });
@@ -20,15 +22,20 @@ class CustomListView extends StatelessWidget {
   Widget build(BuildContext context) {
     SizeConfig.init(context);
     return SizedBox(
-      height: (SizeConfig.screenHeight * .15) + 55.res(context),
-      child: ListView.builder(
+      height: ((SizeConfig.screenHeight * .22) + 65.res(context)) * 2,
+      child: MasonryGridView.count(
         physics: const BouncingScrollPhysics(),
         padding: const EdgeInsetsDirectional.only(start: 24),
-        scrollDirection: Axis.horizontal,
+        crossAxisCount: 2,
+        mainAxisSpacing: 10,
+        crossAxisSpacing: 30,
         itemCount: list.length,
-        itemBuilder: (context, index) => ListItem(
-          listItem: list[index],
-        ),
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return GridItem(
+            listItem: list[index],
+          );
+        },
       ),
     );
   }

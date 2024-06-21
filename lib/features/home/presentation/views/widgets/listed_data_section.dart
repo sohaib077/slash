@@ -2,14 +2,24 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:slash/core/utils/dummy_data.dart';
+import 'package:slash/features/home/data/models/data_model.dart';
 import 'package:slash/features/home/presentation/views/widgets/category_header.dart';
 import 'package:slash/features/home/presentation/views/widgets/custom_list_view.dart';
 import 'package:slash/generated/l10n.dart';
 
-class NewArrivalSection extends StatelessWidget {
-  const NewArrivalSection({
+import 'custom_grid_view.dart';
+
+class ListedDataSection extends StatelessWidget {
+  const ListedDataSection({
     super.key,
+    this.isDesktop = false,
+    required this.title,
+    required this.list,
   });
+
+  final bool isDesktop;
+  final String title;
+  final List<DataModel> list;
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +27,14 @@ class NewArrivalSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CategoryHeader(
-          title: S.of(context).new_arrival,
+          title: title,
         ),
-        const CustomListView(list: DummyData.newArrival),
+        if (!isDesktop) CustomListView(list: list),
+        if (isDesktop)
+          Padding(
+            padding: const EdgeInsets.only(top: 10),
+            child: CustomGridView(list: list),
+          ),
       ],
     );
   }

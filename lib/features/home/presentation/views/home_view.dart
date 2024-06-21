@@ -6,7 +6,7 @@ import 'package:slash/core/utils/size_config.dart';
 import 'package:slash/features/home/presentation/manager/home_cubit.dart';
 import 'package:slash/features/home/presentation/views/desktop_layout.dart';
 import 'package:slash/features/home/presentation/views/widgets/bottom_navigation_bar.dart';
-import 'package:slash/features/home/presentation/views/widgets/mobile_layout.dart';
+import 'package:slash/features/home/presentation/views/mobile_layout.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});

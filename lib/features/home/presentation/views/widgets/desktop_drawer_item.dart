@@ -34,7 +34,7 @@ class DesktopDrawerItem extends StatelessWidget {
           HomeCubit.get(context).changeTab(index);
         },
         child: Padding(
-          padding: const EdgeInsetsDirectional.only(start: 16, end: 6),
+          padding: const EdgeInsetsDirectional.only(start: 16, end: 0),
           child: Row(
             children: [
               SvgPicture.asset(
@@ -56,7 +56,7 @@ class DesktopDrawerItem extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   child: Container(
-                    width: 6,
+                    width: 8,
                     // height: double.infinity,
                     decoration: const BoxDecoration(
                       color: AppColors.black,

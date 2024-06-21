@@ -10,7 +10,10 @@ import 'package:slash/features/home/presentation/views/widgets/custom_dots_indic
 class CustomCarouselSlider extends StatelessWidget {
   const CustomCarouselSlider({
     super.key,
+    this.screenHeightRation,
   });
+
+  final double? screenHeightRation;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +28,7 @@ class CustomCarouselSlider extends StatelessWidget {
           items: images.map((image) => _buildItem(image)).toList(),
           options: CarouselOptions(
             scrollPhysics: const BouncingScrollPhysics(),
-            height: SizeConfig.screenHeight * .15,
+            height: SizeConfig.screenHeight * (screenHeightRation ?? .15),
             enlargeCenterPage: true,
             enableInfiniteScroll: false,
             viewportFraction: .8,

@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:slash/features/home/presentation/views/desktop_body.dart';
-import 'package:slash/features/home/presentation/views/desktop_drawer.dart';
+import 'package:slash/features/home/presentation/views/widgets/desktop_body.dart';
+import 'package:slash/features/home/presentation/views/widgets/desktop_drawer.dart';
 import 'package:slash/features/home/presentation/views/widgets/desktop_home_app_bar.dart';
 
 class DesktopLayout extends StatelessWidget {
