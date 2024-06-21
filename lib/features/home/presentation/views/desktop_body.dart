@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:slash/core/utils/app_colors.dart';
 import 'package:slash/features/home/presentation/views/widgets/best_selling_section.dart';
 import 'package:slash/features/home/presentation/views/widgets/categories_section.dart';
 import 'package:slash/features/home/presentation/views/widgets/custom_carousel_slider.dart';
@@ -15,12 +16,18 @@ class DesktopBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadiusDirectional.only(
+        borderRadius: const BorderRadiusDirectional.only(
           topStart: Radius.circular(8),
-          bottomStart: Radius.circular(8),
         ),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.black.withOpacity(0.07),
+            offset: const Offset(-1, -.5),
+            blurRadius: 5,
+          ),
+        ],
       ),
       child: const SingleChildScrollView(
         physics: BouncingScrollPhysics(),

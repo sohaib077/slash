@@ -18,15 +18,17 @@ class DesktopHomeAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: AppColors.white,
-          borderRadius: const BorderRadius.only(
-            bottomLeft: Radius.circular(8),
-            bottomRight: Radius.circular(8),
-          ),
-          boxShadow: [
-            BoxShadow(
-                color: AppColors.black.withOpacity(0.1), offset: Offset(0, 1)),
-          ]),
+        color: AppColors.white,
+        borderRadius: const BorderRadius.only(
+          bottomLeft: Radius.circular(8),
+          bottomRight: Radius.circular(8),
+        ),
+        boxShadow: [
+          BoxShadow(
+              color: AppColors.black.withOpacity(0.1),
+              offset: const Offset(0, 1)),
+        ],
+      ),
       padding: const EdgeInsets.symmetric(
           horizontal: Constants.horizontalPadding, vertical: 15),
       child: Row(
