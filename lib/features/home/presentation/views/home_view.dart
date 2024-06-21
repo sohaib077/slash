@@ -19,13 +19,12 @@ class HomeView extends StatelessWidget {
       child: GestureDetector(
         onTap: () => unfocus(context),
         child: Scaffold(
-          bottomNavigationBar: SizeConfig.screenWidth < SizeConfig.desktop
+          bottomNavigationBar: ! SizeConfig.isDesktop(context)
               ? const CustomBottomNavigationBar()
               : null,
           appBar: AppBar(),
           body: AdaptiveLayout(
             mobileLayout: (context) => const MobileLayout(),
-            tabletLayout: (context) => const MobileLayout(),
             desktopLayout: (context) => const DesktopLayout(),
           ),
         ),

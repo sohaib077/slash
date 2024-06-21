@@ -3,19 +3,15 @@ import 'package:slash/core/utils/size_config.dart';
 
 class AdaptiveLayout extends StatelessWidget {
   const AdaptiveLayout(
-      {super.key,
-      required this.mobileLayout,
-      required this.tabletLayout,
-      required this.desktopLayout});
+      {super.key, required this.mobileLayout, required this.desktopLayout});
 
-  final WidgetBuilder mobileLayout, tabletLayout, desktopLayout;
+  final WidgetBuilder mobileLayout, desktopLayout;
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constrains) {
-      if (constrains.maxWidth < SizeConfig.tablet) {
+      if (constrains.maxWidth < SizeConfig.desktop) {
         return mobileLayout(context);
-      } else if (constrains.maxWidth < SizeConfig.desktop) {
-        return tabletLayout(context);
       } else {
         return desktopLayout(context);
       }

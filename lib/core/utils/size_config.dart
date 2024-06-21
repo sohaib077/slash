@@ -8,8 +8,7 @@ abstract class SizeConfig {
   static late double heightBlock;
 
   /// Break points
-  static const double desktop = 1000;
-  static const double tablet = 800;
+  static const double desktop = 800;
 
   static init(BuildContext context) {
     _mediaQueryData = MediaQuery.sizeOf(context);
@@ -37,12 +36,10 @@ abstract class SizeConfig {
 
   static double getScaleFactor(context) {
     double width = MediaQuery.sizeOf(context).width;
-    if (width < SizeConfig.tablet) {
-      return width / 500;
-    } else if (width < SizeConfig.desktop) {
+    if (width < SizeConfig.desktop) {
       return width / 500;
     } else {
-      return width / 900;
+      return width / 700;
     }
   }
 }
